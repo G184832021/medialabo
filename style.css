@@ -1,4 +1,4 @@
-h2 {
+h3 {
     color: rgb(159, 89, 224)
 }
 
@@ -9,5 +9,7 @@ a:link {
 }
 
 a:visited {
-color: yellow
+color: rgb(192, 198, 224)
 }
+
+
