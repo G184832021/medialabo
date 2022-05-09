@@ -1,0 +1,88 @@
+h1{
+    color: rgb(239, 240, 240)
+}
+
+h2 {
+    color: rgb(239, 240, 240)
+}
+
+h3 {
+    color: rgb(239, 240, 240)
+}
+
+p {
+    color: rgb(0, 0, 0)
+}
+
+
+a:link {
+    color: red;
+}
+
+
+a:visited {
+color: rgb(156, 255, 35)
+}
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #9caae2;
+}
+
+.a {
+    width:auto;
+    height: auto;
+    border-radius: 15px;
+    background: #9caae2;
+    box-shadow:  13px -13px 26px #6f92a0b3,
+                 -13px 13px 26px #c9ffffc7;
+                 margin:10px;
+                 padding:1em;
+}
+
+.b {
+    width:auto;
+    height: auto;
+    border-radius: 15px;
+    background: #9caae2;
+    box-shadow:  13px -13px 26px #6f92a0b3,
+                 -13px 13px 26px #c9ffffc7;
+                 margin:10px;
+                 padding:1em;
+}
+
+.c {
+    width:auto;
+    height: auto;
+    border-radius: 15px;
+    background: #9caae2;
+    box-shadow:  13px -13px 26px #6f92a0b3,
+                 -13px 13px 26px #c9ffffc7;
+                 margin:10px;
+                 padding:1em;
+}
+
+h4 {
+    font-size: 15px;
+    color: transparent;             
+    background-clip: text;         
+    background-image: linear-gradient(45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        aqua,
+        blue,
+        purple);
+    background-size: 1200%; 
+    animation: 6s linear 0s infinite alternate slide;    
+}
+
+@keyframes slide { 
+    from { background-position: 0% 0%; } 
+    to { background-position: 100% 0%; }   
+}
+
+.h2 { font-family: "Sawarabi Mincho"; }
+
