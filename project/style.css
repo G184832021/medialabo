@@ -1,0 +1,15 @@
+h1{
+    color: rgb(214, 4, 4)
+}
+.a{
+    width:auto;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #e5eeef;
+}
