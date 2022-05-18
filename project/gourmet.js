@@ -200,4 +200,7 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こう
-
+console.log = data.shop;
+for (let n of data.shop.access){
+	console.log(n);
+}
