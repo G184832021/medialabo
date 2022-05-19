@@ -201,7 +201,6 @@ let data = {
 
 /////////// 課題3-2 ここからプログラムを書こう
 
-console.log = data.results.shop;
 for (let n of data.results.shop){
-	console.log(n);
+	console.log(n.name);
 }
