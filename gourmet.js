@@ -202,5 +202,11 @@ let data = {
 /////////// 課題3-2 ここからプログラムを書こう
 
 for (let n of data.results.shop){
-	console.log(n.name);
+console.log(n.name);
 }
+let a = document.querySelector('span#name')
+a.textContent = data.results.shop.name;
+let b = document.querySelector('span#address')
+a.textContent = data.results.shop.address;
+let c = document.querySelector('span#access')
+a.textContent = data.results.shop.accessc;
