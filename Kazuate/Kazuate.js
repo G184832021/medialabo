@@ -5,24 +5,25 @@ hantei();
 function hantei() {
     let yoso = 4; 
     kaisu=kaisu+1;   
+let re = document.querySelector('span#result');
 let answer = (kaisu+`回目の予想`+yoso);
 let s = document.querySelector('span#answer');
 s.textContent = answer;
 }
 if(kotae===yoso&&kaisu<4){
     
-   console.log (`正解です.おめでとう！`);
+   re.textContent (`正解です.おめでとう！`);
     kaisu=4;
 }
 if(kotae<yoso&&kaisu<3){
-    console.log  (`まちがい．答えはもっと小さいですよ`);
+    re.textContent (`まちがい．答えはもっと小さいですよ`);
 }
-if(kotae>yoso&&kaisu<3){
-    lconsole.log  (`まちがい．答えはもっと大きいですよ`);
+else if(kotae>yoso&&kaisu<3){
+    re.textContent (`まちがい．答えはもっと大きいですよ`);
 }
-if(kotae!==yoso&&kaisu===3){
-    console.log  (`まちがい．残念でした答えは`+kotae+`です．`);
+else if(kotae!==yoso&&kaisu===3){
+    re.textContent (`まちがい．残念でした答えは`+kotae+`です．`);
 }
-if(kotae!==yoso&&kaisu>3||kotae===yoso&&kaisu>4){
-    console.log  (`答え`+kotae+`はでした すでにゲームは終わっています`);
+else if(kotae!==yoso&&kaisu>3||kotae===yoso&&kaisu>4){
+    re.textContent (`答え`+kotae+`はでした すでにゲームは終わっています`);
 }
