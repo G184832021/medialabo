@@ -10,9 +10,8 @@ function hantei() {
     kaisu=kaisu+1;   
 let re = document.querySelector('span#result');
 let k = document.querySelector('span#kaisu');
-k.textContent = kaisu;
-let y = document.querySelector('span#yoso');
-y.textContent = yoso;
+k.textContent = kaisu+'回目の予想 '+yoso;
+
 
 if(kotae===yoso&&kaisu<4){
    re.textContent = '正解です.おめでとう！';
