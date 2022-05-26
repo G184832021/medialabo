@@ -204,9 +204,15 @@ let data = {
 for (let n of data.results.shop){
 console.log(n.name);
 }
-let a = document.querySelector('span#name')
-a.textContent = data.results.shop.name;
+/*let a = document.querySelector('span#name')
+a.textContent = data.results.shop[0].name;
 let b = document.querySelector('span#address')
-a.textContent = data.results.shop.address;
+b.textContent = data.results.shop[0].address;
 let c = document.querySelector('span#access')
-a.textContent = data.results.shop.accessc;
+c.textContent = data.results.shop[0].access;*/
+let a = document.querySelector('span#name')
+a.textContent = data.results.shop[1].name;
+let b = document.querySelector('span#address')
+b.textContent = data.results.shop[1].address;
+let c = document.querySelector('span#access')
+c.textContent = data.results.shop[1].access;
