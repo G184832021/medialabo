@@ -204,15 +204,22 @@ let data = {
 for (let n of data.results.shop){
 console.log(n.name);
 }
-/*let a = document.querySelector('span#name')
+let x = document.querySelector('#print');
+x.addEventListener('click', kensaku);
+function kensaku() {
+  let i = document.querySelector('input[name="hantei"]');
+	let hantei = i.value;
+    let yoso = Number(hantei); 
+let a = document.querySelector('span#name')
 a.textContent = data.results.shop[0].name;
 let b = document.querySelector('span#address')
 b.textContent = data.results.shop[0].address;
 let c = document.querySelector('span#access')
-c.textContent = data.results.shop[0].access;*/
-let a = document.querySelector('span#name')
-a.textContent = data.results.shop[1].name;
-let b = document.querySelector('span#address')
-b.textContent = data.results.shop[1].address;
-let c = document.querySelector('span#access')
-c.textContent = data.results.shop[1].access;
+c.textContent = data.results.shop[0].access;
+let d = document.querySelector('span#name')
+d.textContent = data.results.shop[1].name;
+let e = document.querySelector('span#address')
+e.textContent = data.results.shop[1].address;
+let f = document.querySelector('span#access')
+f.textContent = data.results.shop[1].access;
+}
