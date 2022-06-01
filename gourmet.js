@@ -207,7 +207,7 @@ console.log(n.name);
 let x = document.querySelector('#print');
 x.addEventListener('click', kensaku);
 function kensaku() {
-  let i = document.querySelector('input[name="hantei"]');
+  let i = document.querySelector('input[name="kensaku"]');
 	let hantei = i.value;
     let yoso = Number(hantei); 
 let a = document.querySelector('span#name')
