@@ -3,19 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>グルメ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="gourmet.js" defer></script>
     <link rel="stylesheet" href="project-style.css">
     <body>
         <h1>グルメサイト</h1>
        <div class="a">
 <h2> グルメ情報を探す</h2>
-        <input type="genre" name="name" placeholder="店名・ジャンルを入力">
-        <button id="print">検索</button>
+<div class = "b">
+        <h2>食べたいジャンルを選び、3桁の数字を下の検索欄に入力してください。</h2>
+        <p>001 ... 居酒屋</p>
+        <p>002 ... ダイニングバー・バル</p>
+        <p>003 ... 創作料理</p>
+        <p>004 ... 和食</p>
+        <p>005 ... 洋食</p>
+        <p>006 ... イタリアン・フレンチ</p>
+        <p>007 ... 中華</p>
+        <p>008 ... 焼肉・ホルモン</p>
+        <p>009 ... アジア・エスニック料理</p>
+        <p>010 ... 各国料理</p>
+        <p>011 ... カラオケ・パーティ</p>
+        <p>012 ... バー・カクテル</p>
+        <p>013 ... ラーメン</p>
+        <p>014 ... カフェ・スイーツ</p>
+        <p>015 ... その他グルメ</p>
+        <p>016 ... お好み焼き・もんじゃ</p>
+        <p>017 ... 韓国料理</p>
+</div>
+        <input type="genre" name="name" placeholder="3桁の数字を入力">
+        <button id="kensaku">検索</button>
         </div>
-<div class="b"> 
+<div class="c"> 
         <h2>検索にヒットした店名を下に表示します。</h2>
 <h1>   ↓     </h1>
 <h2><span id="name"></span></h2>
 <h2><span id="address"></span></h2>
 <h2><span id="access"></span></h2>
+<h2><span id="open"></span></h2>
+<h2><span id="catch"></span></h2>
 </div>

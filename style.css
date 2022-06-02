@@ -72,7 +72,7 @@ body {
 }
 
 .d {
-    width:auto
+    width:auto;
     height: auto;
     border-radius: 15px;
     background: #9caae2;

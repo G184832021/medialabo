@@ -201,25 +201,45 @@ let data = {
 
 /////////// 課題3-2 ここからプログラムを書こう
 
-for (let n of data.results.shop){
+/*for (let n of data.results.shop){
 console.log(n.name);
-}
-let x = document.querySelector('#print');
+}*/
+let x = document.querySelector('#kensaku');
 x.addEventListener('click', kensaku);
+
 function kensaku() {
+let i = document.querySelector('input[name="name"]');
+let genre = i.value;
+ let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G'+ genre + '.json';
+    // 通信開始
+    axios.get(url)
+        .then(showResult)   // 通信成功
+        .catch(showError)   // 通信失敗
+        .then(finish);    // 通信の最後の処理
+}
+function showResult(resp) {
+	let data = resp.data;
+	if (typeof data === 'string') {
+		data = JSON.parse(data);
+	}
   let i = document.querySelector('input[name="kensaku"]');
-	let hantei = i.value;
-    let yoso = Number(hantei); 
-let a = document.querySelector('span#name')
-a.textContent = data.results.shop[0].name;
-let b = document.querySelector('span#address')
-b.textContent = data.results.shop[0].address;
-let c = document.querySelector('span#access')
-c.textContent = data.results.shop[0].access;
-let d = document.querySelector('span#name')
-d.textContent = data.results.shop[1].name;
-let e = document.querySelector('span#address')
-e.textContent = data.results.shop[1].address;
-let f = document.querySelector('span#access')
-f.textContent = data.results.shop[1].access;
+for (let i = 0; i<10; i++) {
+a = document.createElement('h2'); 
+a.textContent = data.results.shop[i].access;
+.insertAdjacentElement('afterend', a);
+let b = document.querySelector('span#name')
+b.textContent = data.results.shop[i].name;
+let c = document.querySelector('span#address')
+c.textContent = data.results.shop[i].address;
+let d = document.querySelector('span#catch')
+d.textContent = data.results.shop[i].catch;
+let e = document.querySelector('span#open')
+e.textContent = data.results.shop[i].open;
+}
+}
+function showError(err) {
+	console.log(err);
+}	
+function finish() {
+  console.log('Ajax 通信が終わりました');
 }
