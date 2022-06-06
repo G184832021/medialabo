@@ -19,6 +19,12 @@ h1{
     border-radius: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.d{
+    width:auto;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 body {
     width: 90%;
     max-width: 900px;

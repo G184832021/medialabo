@@ -206,7 +206,9 @@ console.log(n.name);
 }*/
 let x = document.querySelector('#kensaku');
 x.addEventListener('click', kensaku);
-
+function koshin(){
+  location.reload();
+}
 function kensaku() {
 let i = document.querySelector('input[name="name"]');
 let genre = i.value;
@@ -222,19 +224,20 @@ function showResult(resp) {
 	if (typeof data === 'string') {
 		data = JSON.parse(data);
 	}
-  let i = document.querySelector('input[name="kensaku"]');
+
+let i = document.querySelector('input[name="kensaku"]');
 for (let i = 0; i<10; i++) {
-a = document.createElement('h2'); 
-a.textContent = data.results.shop[i].access;
-.insertAdjacentElement('afterend', a);
-let b = document.querySelector('span#name')
-b.textContent = data.results.shop[i].name;
-let c = document.querySelector('span#address')
-c.textContent = data.results.shop[i].address;
-let d = document.querySelector('span#catch')
-d.textContent = data.results.shop[i].catch;
-let e = document.querySelector('span#open')
-e.textContent = data.results.shop[i].open;
+
+let name = document.querySelector('span#name')
+h3 = document.createElement('h3');
+h3.textContent = data.results.shop[i].name;
+name.insertAdjacentElement('afterend',h3);
+
+let address=document.querySelector('span#address')
+h3 = document.createElement('h3');
+h3.textContent = data.results.shop[i].address;
+address.insertAdjacentElement('afterend',h3);
+
 }
 }
 function showError(err) {
