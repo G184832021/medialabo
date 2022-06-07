@@ -103,3 +103,26 @@ body {
                  margin:10px;
                  padding:1em;
 }
+
+.g {
+    width:auto;
+    height: auto;
+    border-radius: 15px;
+    background: #9caae2;
+    box-shadow:  13px -13px 26px #6f92a0b3,
+                 -13px 13px 26px #c9ffffc7;
+                 margin:10px;
+                 padding:1em;
+}
+
+.h {
+    width:auto;
+    height: auto;
+    border-radius: 15px;
+    background: #9caae2;
+    box-shadow:  13px -13px 26px #6f92a0b3,
+                 -13px 13px 26px #c9ffffc7;
+                 margin:10px;
+                 padding:1em;
+}
+
