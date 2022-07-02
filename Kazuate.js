@@ -14,7 +14,7 @@ k.textContent = kaisu+'回目の予想 '+yoso;
 
 
 if(kotae===yoso&&kaisu<4){
-   re.textContent = '正解です.おめでとう！';
+   re.textContent = '正解です.おめでとう！!';
     kaisu=4;
 }
 if(kotae<yoso&&kaisu<3){
